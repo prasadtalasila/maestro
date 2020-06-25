@@ -1,0 +1,7 @@
+org.intocps.maestro.plugin
+org.intocps.maestro.plugin.env
+org.intocps.maestro.plugin.env.fmi2
+org.intocps.maestro.plugin.Initializer
+org.intocps.maestro.plugin.Initializer.ConversionUtilities
+org.intocps.maestro.plugin.Initializer.PrologVerifier
+org.intocps.maestro.plugin.Initializer.Spec

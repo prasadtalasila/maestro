@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.intocps.maestro.plugin","l":"SomePlugin.DemoConfig"},{"p":"org.intocps.maestro.plugin","l":"SomePlugin"}]

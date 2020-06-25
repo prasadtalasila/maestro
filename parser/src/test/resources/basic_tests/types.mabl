@@ -1,4 +1,0 @@
- module FMI2 {
-	FMI2Component instantiate(ref bool logging);
- //	void freeInstance(FMI2Component comp);
-}

@@ -1,7 +1,0 @@
- simulation
-  import FMI2;
-
- {
-        int FMUA[1];
-
- }

@@ -1,7 +1,0 @@
- simulation
-  import FMI2;
-
- {
-        FMI2 FMUA = load("FMI2", "path/to/FMUA.fmu");
-
- }
