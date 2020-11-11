@@ -14,4 +14,5 @@ An offline version the API documentation is given below.
         <iframe src='
         ../_static/index.html
         ' scrolling='yes'
+        height="345px" width="100%"
         ></iframe>
