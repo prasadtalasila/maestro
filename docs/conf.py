@@ -34,6 +34,7 @@ extensions = [
     "recommonmark",
     "sphinx_rtd_theme",
     "sphinxcontrib.plantuml",
+    "sphinx-jsonschema",
 #    "sphinx.ext.autosectionlabel"
 ]
 
