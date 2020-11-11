@@ -1,0 +1,2252 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Api Documentation",
+    "version": "1.0",
+    "title": "Api Documentation",
+    "termsOfService": "urn:tos",
+    "contact": {},
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  },
+  "host": "localhost:8082",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "esa-simulation-controller",
+      "description": "Esa Simulation Controller"
+    },
+    {
+      "name": "maestro-1-simulation-controller",
+      "description": "Maestro 1 Simulation Controller"
+    },
+    {
+      "name": "maestro-2-simulation-controller",
+      "description": "Maestro 2 Simulation Controller"
+    },
+    {
+      "name": "simulator-management-controller",
+      "description": "Simulator Management Controller"
+    }
+  ],
+  "paths": {
+    "/api/esav1/orchestrator/": {
+      "post": {
+        "tags": [
+          "simulator-management-controller"
+        ],
+        "summary": "create",
+        "operationId": "createUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/CreateResponse"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/esav1/orchestrator/ping": {
+      "get": {
+        "tags": [
+          "simulator-management-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingGET_3",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      },
+      "head": {
+        "tags": [
+          "simulator-management-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingHEAD_1",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      },
+      "post": {
+        "tags": [
+          "simulator-management-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingPOST_1",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      },
+      "put": {
+        "tags": [
+          "simulator-management-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingPUT_1",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      },
+      "delete": {
+        "tags": [
+          "simulator-management-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingDELETE_1",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      },
+      "options": {
+        "tags": [
+          "simulator-management-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingOPTIONS_1",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      },
+      "patch": {
+        "tags": [
+          "simulator-management-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingPATCH_1",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/esav1/orchestrator/terminate": {
+      "post": {
+        "tags": [
+          "simulator-management-controller"
+        ],
+        "summary": "terminate",
+        "operationId": "terminateUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/esav1/orchestrator/{simulatorId}": {
+      "delete": {
+        "tags": [
+          "simulator-management-controller"
+        ],
+        "summary": "delete",
+        "operationId": "deleteUsingDELETE",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "simulatorId",
+            "in": "path",
+            "description": "simulatorId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/esav1/simulator/destroy": {
+      "get": {
+        "tags": [
+          "esa-simulation-controller"
+        ],
+        "summary": "destroy",
+        "operationId": "destroyUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/esav1/simulator/initialize": {
+      "post": {
+        "tags": [
+          "esa-simulation-controller"
+        ],
+        "summary": "initializeSession",
+        "operationId": "initializeSessionUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/EsaIninializationData"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/esav1/simulator/ping": {
+      "get": {
+        "tags": [
+          "esa-simulation-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      },
+      "head": {
+        "tags": [
+          "esa-simulation-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingHEAD",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      },
+      "post": {
+        "tags": [
+          "esa-simulation-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      },
+      "put": {
+        "tags": [
+          "esa-simulation-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      },
+      "delete": {
+        "tags": [
+          "esa-simulation-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingDELETE",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      },
+      "options": {
+        "tags": [
+          "esa-simulation-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingOPTIONS",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      },
+      "patch": {
+        "tags": [
+          "esa-simulation-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingPATCH",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/esav1/simulator/reset": {
+      "post": {
+        "tags": [
+          "esa-simulation-controller"
+        ],
+        "summary": "reset",
+        "operationId": "resetUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/esav1/simulator/result/plain": {
+      "get": {
+        "tags": [
+          "esa-simulation-controller"
+        ],
+        "summary": "getResultPlain",
+        "operationId": "getResultPlainUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Resource"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/esav1/simulator/result/zip": {
+      "get": {
+        "tags": [
+          "esa-simulation-controller"
+        ],
+        "summary": "getResultZip",
+        "operationId": "getResultZipUsingGET",
+        "produces": [
+          "application/zip"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/esav1/simulator/simulate": {
+      "post": {
+        "tags": [
+          "esa-simulation-controller"
+        ],
+        "summary": "simulate",
+        "operationId": "simulateUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/EsaSimulateRequestBody"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/esav1/simulator/stop": {
+      "post": {
+        "tags": [
+          "esa-simulation-controller"
+        ],
+        "summary": "stop",
+        "operationId": "stopUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/maestro1/createSession": {
+      "get": {
+        "tags": [
+          "maestro-1-simulation-controller"
+        ],
+        "summary": "createSession",
+        "operationId": "createSessionUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/StatusModel"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/maestro1/destroy/{sessionId}": {
+      "get": {
+        "tags": [
+          "maestro-1-simulation-controller"
+        ],
+        "summary": "destroy",
+        "operationId": "destroyUsingGET_1",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/maestro1/initialize/{sessionId}": {
+      "post": {
+        "tags": [
+          "maestro-1-simulation-controller"
+        ],
+        "summary": "initializeSession",
+        "operationId": "initializeSessionUsingPOST_1",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/IninializationData"
+            }
+          },
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/InitializeStatusModel"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/maestro1/ping": {
+      "get": {
+        "tags": [
+          "maestro-1-simulation-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingGET_1",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/maestro1/result/{sessionId}/plain": {
+      "get": {
+        "tags": [
+          "maestro-1-simulation-controller"
+        ],
+        "summary": "getResultPlain",
+        "operationId": "getResultPlainUsingGET_1",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Resource"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/maestro1/result/{sessionId}/zip": {
+      "get": {
+        "tags": [
+          "maestro-1-simulation-controller"
+        ],
+        "summary": "getResultZip",
+        "operationId": "getResultZipUsingGET_1",
+        "produces": [
+          "application/zip"
+        ],
+        "parameters": [
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/maestro1/simulate/{sessionId}": {
+      "post": {
+        "tags": [
+          "maestro-1-simulation-controller"
+        ],
+        "summary": "simulate",
+        "operationId": "simulateUsingPOST_1",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/SimulateRequestBody"
+            }
+          },
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/StatusModel"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/maestro1/status/{sessionId}": {
+      "get": {
+        "tags": [
+          "maestro-1-simulation-controller"
+        ],
+        "summary": "getStatuses",
+        "operationId": "getStatusesUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/StatusModel"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/maestro1/stopsimulation/{sessionId}": {
+      "post": {
+        "tags": [
+          "maestro-1-simulation-controller"
+        ],
+        "summary": "stop",
+        "operationId": "stopUsingPOST_1",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/api/maestro1/upload/{sessionId}": {
+      "post": {
+        "tags": [
+          "maestro-1-simulation-controller"
+        ],
+        "summary": "uploadFile",
+        "operationId": "uploadFileUsingPOST",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "fieldFile",
+            "in": "formData",
+            "description": "File",
+            "required": true,
+            "type": "file"
+          },
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/createSession": {
+      "get": {
+        "tags": [
+          "maestro-2-simulation-controller"
+        ],
+        "summary": "createSession",
+        "operationId": "createSessionUsingGET_1",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/StatusModel"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/destroy/{sessionId}": {
+      "get": {
+        "tags": [
+          "maestro-2-simulation-controller"
+        ],
+        "summary": "destroy",
+        "operationId": "destroyUsingGET_2",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/initialize/{sessionId}": {
+      "post": {
+        "tags": [
+          "maestro-2-simulation-controller"
+        ],
+        "summary": "initializeSession",
+        "operationId": "initializeSessionUsingPOST_2",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body1",
+            "description": "body1",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/InitializeStatusModel"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/ping": {
+      "get": {
+        "tags": [
+          "maestro-2-simulation-controller"
+        ],
+        "summary": "ping",
+        "operationId": "pingUsingGET_2",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/result/{sessionId}/plain": {
+      "get": {
+        "tags": [
+          "maestro-2-simulation-controller"
+        ],
+        "summary": "getResultPlain",
+        "operationId": "getResultPlainUsingGET_2",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Resource"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/result/{sessionId}/zip": {
+      "get": {
+        "tags": [
+          "maestro-2-simulation-controller"
+        ],
+        "summary": "getResultZip",
+        "operationId": "getResultZipUsingGET_2",
+        "produces": [
+          "application/zip"
+        ],
+        "parameters": [
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/simulate/{sessionId}": {
+      "post": {
+        "tags": [
+          "maestro-2-simulation-controller"
+        ],
+        "summary": "This request begins the co-simulation",
+        "operationId": "simulateUsingPOST_2",
+        "consumes": [
+          "application/json",
+          "text/plain"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/SimulateRequestBody"
+            }
+          },
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/StatusModel"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/status/{sessionId}": {
+      "get": {
+        "tags": [
+          "maestro-2-simulation-controller"
+        ],
+        "summary": "getStatuses",
+        "operationId": "getStatusesUsingGET_1",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/StatusModel"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/stopsimulation/{sessionId}": {
+      "post": {
+        "tags": [
+          "maestro-2-simulation-controller"
+        ],
+        "summary": "stop",
+        "operationId": "stopUsingPOST_2",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/upload/{sessionId}": {
+      "post": {
+        "tags": [
+          "maestro-2-simulation-controller"
+        ],
+        "summary": "uploadFile",
+        "operationId": "uploadFileUsingPOST_1",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "fieldFile",
+            "in": "formData",
+            "description": "File",
+            "required": true,
+            "type": "file"
+          },
+          {
+            "name": "sessionId",
+            "in": "path",
+            "description": "sessionId",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/version": {
+      "get": {
+        "tags": [
+          "maestro-2-simulation-controller"
+        ],
+        "summary": "version",
+        "operationId": "versionUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "deprecated": false
+      }
+    }
+  },
+  "definitions": {
+    "BoundedDifferenceConstraint": {
+      "type": "object",
+      "properties": {
+        "abstol": {
+          "type": "number",
+          "format": "double"
+        },
+        "ports": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reltol": {
+          "type": "number",
+          "format": "double"
+        },
+        "safety": {
+          "type": "number",
+          "format": "double"
+        },
+        "skipDiscrete": {
+          "type": "boolean"
+        }
+      },
+      "title": "BoundedDifferenceConstraint"
+    },
+    "CreateResponse": {
+      "type": "object",
+      "properties": {
+        "instance_id": {
+          "type": "string"
+        },
+        "instance_url": {
+          "type": "string"
+        },
+        "working_directory": {
+          "type": "string"
+        }
+      },
+      "title": "CreateResponse"
+    },
+    "EsaIninializationData": {
+      "type": "object",
+      "properties": {
+        "fmus": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "connections": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "parameters": {
+          "type": "object"
+        },
+        "inputs": {
+          "type": "object"
+        },
+        "requested_outputs": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "step_size": {
+          "type": "number",
+          "format": "double"
+        },
+        "log_levels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "end_time": {
+          "type": "number",
+          "format": "double"
+        },
+        "simulator_log_level": {
+          "type": "string",
+          "enum": [
+            "OFF",
+            "FATAL",
+            "ERROR",
+            "WARN",
+            "INFO",
+            "DEBUG",
+            "TRACE",
+            "ALL"
+          ]
+        }
+      },
+      "title": "EsaIninializationData"
+    },
+    "EsaSimulateRequestBody": {
+      "type": "object",
+      "properties": {
+        "time_step": {
+          "type": "number",
+          "format": "double"
+        },
+        "inputs": {
+          "type": "object"
+        }
+      },
+      "title": "EsaSimulateRequestBody"
+    },
+    "File": {
+      "type": "object",
+      "properties": {
+        "absolute": {
+          "type": "boolean"
+        },
+        "absoluteFile": {
+          "$ref": "#/definitions/File"
+        },
+        "absolutePath": {
+          "type": "string"
+        },
+        "canonicalFile": {
+          "$ref": "#/definitions/File"
+        },
+        "canonicalPath": {
+          "type": "string"
+        },
+        "directory": {
+          "type": "boolean"
+        },
+        "file": {
+          "type": "boolean"
+        },
+        "freeSpace": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "hidden": {
+          "type": "boolean"
+        },
+        "name": {
+          "type": "string"
+        },
+        "parent": {
+          "type": "string"
+        },
+        "parentFile": {
+          "$ref": "#/definitions/File"
+        },
+        "path": {
+          "type": "string"
+        },
+        "totalSpace": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "usableSpace": {
+          "type": "integer",
+          "format": "int64"
+        }
+      },
+      "title": "File"
+    },
+    "FixedStepAlgorithmConfig": {
+      "title": "FixedStepAlgorithmConfig",
+      "allOf": [
+        {
+          "$ref": "#/definitions/IAlgorithmConfig"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "size": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          "title": "FixedStepAlgorithmConfig"
+        }
+      ]
+    },
+    "FmuMaxStepSizeConstraint": {
+      "type": "object",
+      "title": "FmuMaxStepSizeConstraint"
+    },
+    "IAlgorithmConfig": {
+      "type": "object",
+      "discriminator": "type",
+      "title": "IAlgorithmConfig",
+      "description": "Simulation algorithm."
+    },
+    "IninializationData": {
+      "type": "object",
+      "properties": {
+        "fmus": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "connections": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "parameters": {
+          "type": "object"
+        },
+        "livestream": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "logvariables": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "parallelSimulation": {
+          "type": "boolean"
+        },
+        "stabalizationEnabled": {
+          "type": "boolean"
+        },
+        "global_absolute_tolerance": {
+          "type": "number",
+          "format": "double"
+        },
+        "global_relative_tolerance": {
+          "type": "number",
+          "format": "double"
+        },
+        "loggingOn": {
+          "type": "boolean"
+        },
+        "visible": {
+          "type": "boolean"
+        },
+        "simulationProgramDelay": {
+          "type": "boolean"
+        },
+        "hasExternalSignals": {
+          "type": "boolean"
+        },
+        "algorithm": {
+          "$ref": "#/definitions/IAlgorithmConfig"
+        },
+        "overrideLogLevel": {
+          "type": "string",
+          "enum": [
+            "OFF",
+            "FATAL",
+            "ERROR",
+            "WARN",
+            "INFO",
+            "DEBUG",
+            "TRACE",
+            "ALL"
+          ]
+        }
+      },
+      "title": "IninializationData"
+    },
+    "InitializeStatusModel": {
+      "type": "object",
+      "properties": {
+        "avaliableLogLevels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/LogLevelModel"
+            }
+          }
+        },
+        "lastExecTime": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "sessionId": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      },
+      "title": "InitializeStatusModel"
+    },
+    "InputStream": {
+      "type": "object",
+      "title": "InputStream"
+    },
+    "LogLevelModel": {
+      "type": "object",
+      "title": "LogLevelModel"
+    },
+    "Resource": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "file": {
+          "$ref": "#/definitions/File"
+        },
+        "filename": {
+          "type": "string"
+        },
+        "inputStream": {
+          "$ref": "#/definitions/InputStream"
+        },
+        "open": {
+          "type": "boolean"
+        },
+        "readable": {
+          "type": "boolean"
+        },
+        "uri": {
+          "$ref": "#/definitions/URI"
+        },
+        "url": {
+          "$ref": "#/definitions/URL"
+        }
+      },
+      "title": "Resource"
+    },
+    "SamplingConstraint": {
+      "type": "object",
+      "properties": {
+        "base": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "rate": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "startTime": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "title": "SamplingConstraint"
+    },
+    "SimulateRequestBody": {
+      "type": "object",
+      "properties": {
+        "startTime": {
+          "type": "number",
+          "format": "double",
+          "description": "The start time of the co-simulation"
+        },
+        "endTime": {
+          "type": "number",
+          "format": "double"
+        },
+        "logLevels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "reportProgress": {
+          "type": "boolean"
+        },
+        "liveLogInterval": {
+          "type": "number",
+          "format": "double"
+        }
+      },
+      "title": "SimulateRequestBody"
+    },
+    "StatusModel": {
+      "type": "object",
+      "properties": {
+        "lastExecTime": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "sessionId": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      },
+      "title": "StatusModel"
+    },
+    "URI": {
+      "type": "object",
+      "properties": {
+        "absolute": {
+          "type": "boolean"
+        },
+        "authority": {
+          "type": "string"
+        },
+        "fragment": {
+          "type": "string"
+        },
+        "host": {
+          "type": "string"
+        },
+        "opaque": {
+          "type": "boolean"
+        },
+        "path": {
+          "type": "string"
+        },
+        "port": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "query": {
+          "type": "string"
+        },
+        "rawAuthority": {
+          "type": "string"
+        },
+        "rawFragment": {
+          "type": "string"
+        },
+        "rawPath": {
+          "type": "string"
+        },
+        "rawQuery": {
+          "type": "string"
+        },
+        "rawSchemeSpecificPart": {
+          "type": "string"
+        },
+        "rawUserInfo": {
+          "type": "string"
+        },
+        "scheme": {
+          "type": "string"
+        },
+        "schemeSpecificPart": {
+          "type": "string"
+        },
+        "userInfo": {
+          "type": "string"
+        }
+      },
+      "title": "URI"
+    },
+    "URL": {
+      "type": "object",
+      "properties": {
+        "authority": {
+          "type": "string"
+        },
+        "content": {
+          "type": "object"
+        },
+        "defaultPort": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "file": {
+          "type": "string"
+        },
+        "host": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "port": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "protocol": {
+          "type": "string"
+        },
+        "query": {
+          "type": "string"
+        },
+        "ref": {
+          "type": "string"
+        },
+        "userInfo": {
+          "type": "string"
+        }
+      },
+      "title": "URL"
+    },
+    "VariableStepAlgorithmConfig": {
+      "title": "VariableStepAlgorithmConfig",
+      "allOf": [
+        {
+          "$ref": "#/definitions/IAlgorithmConfig"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "size": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "format": "double"
+              }
+            },
+            "initsize": {
+              "type": "number",
+              "format": "double"
+            },
+            "constraints": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/VarStepConstraint"
+              }
+            }
+          },
+          "title": "VariableStepAlgorithmConfig"
+        }
+      ]
+    },
+    "ZeroCrossingConstraint": {
+      "type": "object",
+      "properties": {
+        "abstol": {
+          "type": "number",
+          "format": "double"
+        },
+        "order": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "ports": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "safety": {
+          "type": "number",
+          "format": "double"
+        }
+      },
+      "title": "ZeroCrossingConstraint"
+    }
+  }
+}
